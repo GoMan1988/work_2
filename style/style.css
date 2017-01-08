@@ -58,7 +58,7 @@ html {
 	min-height:100%; /* всегда показываем вертикальную полосу прокрутки  */
 }
 body {
-	background:#f6f6f4;
+	background:#ffccdd;
 	color: #000;
 	text-align: left;
 	font-size: 1em; /* используем безопасные шрифтовые CSS стеки */
@@ -96,7 +96,7 @@ img{
 
 .top {background: #2d2d2d; width:100%;}
 
-.nav_top {max-width: 940px; margin: 0 auto; border: 0px solid #fff; }
+.nav_top {max-width: 1100px; margin: 0 auto; border: 0px solid #fff; }
 .nav_top nav {color: #999999; float:left; border: 0px solid #fff; font-size: 0.75em; font-family:Arial,sanf-serif;}
 .nav_top ul li {display:inline-block; padding: 15px 15px 15px 0;}
 .nav_top ul li a {color: #999999; text-decoration:none;}
@@ -110,7 +110,7 @@ background:#4a4a4a; border-radius: 15px; width:130px; box-sizing:border-box; col
 
 
 
-.block_logo {max-width: 600px; margin: 20px auto 0 auto; border: 0px solid #000;}
+.block_logo {max-width: 940px; margin: 20px auto 0 auto; border: 0px solid #000;}
 
 .logo {float:left; margin-left: 20px;}
 .hed_baner {float:right;}

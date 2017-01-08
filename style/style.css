@@ -1,0 +1,211 @@
+/* --------------- reset.css --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;                               /* обнуляем отступы и убираем бордюры */
+	vertical-align: baseline;          /* приводим все к одной базовой линии */
+	background: transparent;      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+	font-size: 100%;                     /* размер шрифта всем одинаковый */
+}
+a {                                      	     /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+	outline:none;
+}
+table {						/* устраняем отступы между ячейками таблицы */
+	border-collapse: collapse; 
+	border-spacing: 0;
+}
+td, td img {
+	vertical-align: top;			/* возвращаем привычное вертикальное выравнивание */
+} 
+input, select, button, textarea {
+	margin: 0; 				/* убираем отступы по умолчанию для элементов форм (в частности для checkbox и radio) */
+	font-size: 100%; 			/* делаем размер шрифтов везде одинаковым */
+	outline: none;
+}
+input[type="text"], input[type="password"], textarea {
+	padding: 0; 				/* убираем внутренние отступы для текстовых полей */
+}
+input[type="checkbox"] { 		/* вертикальное выравнивание чекбоксов и радиобатонов относительно меток */
+	vertical-align: bottom;
+}
+input[type="radio"] {
+	vertical-align: text-bottom;
+}
+sub {
+	vertical-align: sub;
+	font-size: smaller;
+}
+sup {
+	vertical-align: super;
+	font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+nav ul {
+	 list-style:none;
+}
+/* --------------- /reset.css --------------- */
+
+/* --------------- базовые настройки ---------*/
+html {
+	min-height:100%; /* всегда показываем вертикальную полосу прокрутки  */
+}
+body {
+	background:#f6f6f4;
+	color: #000;
+	text-align: left;
+	font-size: 1em; /* используем безопасные шрифтовые CSS стеки */
+	min-height:100%;
+}
+a, a:visited { /* порядок правил для ссылок имеет значение */
+	color: #e6618c;
+	text-decoration: underline;
+}
+a:hover {
+	color: #fdf208;
+	text-decoration:none;
+}
+a:focus, a:active {
+	color: #c83867;
+	text-decoration: underline;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight:normal;
+}
+img{
+
+	max-width:100%;
+}
+.clr{
+	clear:both;
+}
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+/* --------------- /базовые настройки ---------*/
+.clr {clear:both;}
+
+.top {background: #2d2d2d; width:100%;}
+
+.nav_top {max-width: 940px; margin: 0 auto; border: 0px solid #fff; }
+.nav_top nav {color: #999999; float:left; border: 0px solid #fff; font-size: 0.75em; font-family:Arial,sanf-serif;}
+.nav_top ul li {display:inline-block; padding: 15px 15px 15px 0;}
+.nav_top ul li a {color: #999999; text-decoration:none;}
+.nav_top form {float:right; padding: 10px 0; border: 0px solid #fff;}
+.nav_top form span {color: #fff; margin-right: 20px; font-family:Arial,sanf-serif;}
+.nav_top form a {color: #ea6a53; text-decoration:underline; font-weight:700; border-left: 1px solid #fff; padding: 5px 0 5px 15px;margin-left:20px; font-family:Arial,sanf-serif;}
+.nav_top form a:hover {text-decoration:none;}
+.nav_top form input[type=text], .nav_top form input[type=password]{border:0; font-size:0.75em; padding: 7px 20px; 
+background:#4a4a4a; border-radius: 15px; width:130px; box-sizing:border-box; color: #8e8e8e;}
+.nav_top form input[type=submit]{border:0; background:#ea6a53; padding: 7px 5px; font-size:0.75em; border-radius: 15px; width:35px; color: #fff; font-weight:700; cursor:pointer;}
+
+
+
+.block_logo {max-width: 940px; margin: 20px auto 0 auto; border: 0px solid #000;}
+
+.logo {float:left; margin-left: 20px;}
+.hed_baner {float:right;}
+
+.menu {background:#c3c3c3; max-width: 940px; margin: 20px auto 0 auto;}
+.menu nav {text-transform:uppercase; font-size:0.875em; float:left; font-weight:700; font-family:Arial,sanf-serif;}
+.menu nav ul li {display:inline-block; border-right: 1px solid #b4b4b4; padding: 18px; text-shadow: 1px 0px 1px #fff; color:#2d2d2d;}
+.menu nav ul li:last-child {border-right:0;}
+.menu nav ul li:hover {color: #fff;}
+.menu nav ul li:nth-child(3) {color: #fff;}
+.menu form {float:right; padding: 12px 0;}
+
+.menu form input[type=search] 
+	{
+		float:right;
+		width:90px; 
+		border:0; 
+		font-size:0.75em; 
+		border-radius: 15px 0 0 15px; 
+		padding: 7px 0 7px 10px; 
+		color:#a6a6a6;
+		border: 0px solid #000;
+	}
+	
+.menu form input[type=submit]
+	{
+		float:right;
+		border:0; 
+		background: #fff url(../image/search.gif) no-repeat center center;
+		padding: 7px 5px; 
+		font-size:0.75em; 
+		border-radius: 0 15px 15px 0; 
+		width:35px; 
+		cursor:pointer; 
+		border: 0px solid #000;
+	}
+	
+.menu form .search 
+	{
+		float:right; 
+		width:125px; 
+		border: 0px solid #000; 
+		margin-right: 20px;
+	}
+	
+section {max-width:940px; margin: 25px auto 20px auto; border: 0px solid #000;}
+
+.content {border: 0px solid #000; max-width:642px; float:left;} 
+
+.slider {border: 0px solid #000; padding-bottom:10px; border-bottom: 1px solid #e5e5e5; max-width:626px; }	
+.slider h1 {font-size:1.5em; font-weight:700; font-family:Arial,sanf-serif; color: #2d2d2d; margin-top:20px; border:0px solid #000;}	
+.slider h3 {font-size:0.75em; font-family:Arial,sanf-serif; color:#858585; margin-top:10px; border:0px solid #000;}
+
+.tavary {max-width:640px; border: 0px solid #000; margin-bottom: 20px;}
+
+.tavar {margin: 14px 10px 0 0; font-family:Arial,sanf-serif; border: 0px solid #000; display: inline-block; position: relative; }
+.tavar h2{font-size:0.75em; border:0px solid #000;}
+.tavar p {color:#767676; font-size: 0.75em; display: inline-block; font-family:Arial,sanf-serif;}
+.tavar span {color:#F00; border-right: 1px solid #373737; padding: 0 7px 0 0; margin-right: 15px; margin-right: 0px;}
+.tavar a {color:#767676; text-decoration: none;}
+.sale 
+       {
+	width: 50px; 
+	height: 50px; 
+	border-radius: 25px; 
+	background: #fff; 
+    padding: 0 0 0 5px;
+	display:table; 
+	box-sizing: border-box; 
+	position: absolute; 
+	right: 10%; top: 10%; 
+	}
+.sale p {font-size:0.875em; font-family:Georgia,sanf-serif; color: #363636; margin: 5px auto; }
+.sale span{font-size:1.5em; font-family:Georgia,sanf-serif; color: #bc3726; border: 0px solid #000;}
+.tavar .bay {margin: 0 5px -3px 7px;  }
+
+section aside {float:right; border: 0px solid #000; width:280px;}
+section aside  img{float:right; border: 0px solid #000; margin-bottom: 20px;}
+.sidebar_banner {float:right; position: relative; }
+.banner_bottom {width:120px; background: #bc3726; position: absolute; bottom: 21%; right:0; color: #fff; padding: 10px; font-size: 1.125em; font-family:Arial,sanf-serif; cursor:pointer;}
+
+.other_products {max-width: 940px; background: #fff; clear:both; padding:25px;}
+.other_products h2 {text-transform:uppercase; font-weight:700; font-family:Arial,sanf-serif; font-size: 1.125em; color: #2d2d2d;}
+.other_products h3 {font-size:0.75em; font-family:Arial,sanf-serif; color:#858585; margin-top:10px; border:0px solid #000;}
+
+.other_slider {border-top: 1px solid #e5e5e5; margin-top: 10px;}
+
+.bottom {background: #2d2d2d; width:100%; padding: 20px 0;}
+
+.nav_bottom {max-width: 940px; margin: 0 auto; border: 0px solid #fff; color: #a0a0a0; font-family:Arial,sanf-serif;}
+.nav_bottom nav {float:left; border: 0px solid #fff; padding: 25px 0;}
+.nav_bottom nav ul li {display:inline-block; padding: 0 3px 0 0; border-right: 1px solid #a0a0a0; margin-right: 3px; font-size: 0.75em;}
+.nav_bottom nav ul li:last-child {border-right: 0px solid #a0a0a0;}
+.nav_bottom nav p {font-size: 0.75em; color: #adadad;}
+.nav_bottom nav p span {color:#fff;}
+.nav_bottom ul li a {color: #999999; text-decoration:none;}
+
+.logo_bottom {float:right;}
